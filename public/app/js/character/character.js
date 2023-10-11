@@ -12,6 +12,10 @@ class Character {
     this.alive = true;
     this.show = "Juego de tronos";
   }
+
+  die() {
+    this.alive = false;
+  }
 }
 
 export default Character;
