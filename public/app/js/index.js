@@ -1,7 +1,7 @@
-import King from "./king/king";
-import Adviser from "./adviser/adviser";
-import Fighter from "./fighter/fighter";
-import Squire from "./squire/squire";
+import King from "./king/king.js";
+import Adviser from "./adviser/adviser.js";
+import Fighter from "./fighter/fighter.js";
+import Squire from "./squire/squire.js";
 
 const joffreyBaratheon = new King(
   "JoffreyBaratheon",

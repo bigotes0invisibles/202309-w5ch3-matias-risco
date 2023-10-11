@@ -2,7 +2,8 @@
   "name": "ch3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/app/js/index.js ",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"testing\"",
     "prepare": "husky install"
@@ -20,6 +21,16 @@
     "lint-staged": "^14.0.1"
   },
   "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.0",
     "prettier": "^3.0.3"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
   }
 }
