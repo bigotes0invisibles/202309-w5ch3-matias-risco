@@ -1,7 +1,7 @@
 import Character from "../character/character";
 import Fighter from "../fighter/fighter";
 
-class squire extends Character {
+class Squire extends Character {
   fighterServed;
   nepotismDegree;
 
@@ -12,6 +12,13 @@ class squire extends Character {
     }
 
     this.fighterServed = fighterServed;
+
+    if (nepotismDegree < 0 || nepotismDegree > 10) {
+      throw Error(
+        "Error: squire class nepotismDegree is not a number between 0 and 10",
+      );
+    }
+
     this.nepotismDegree = nepotismDegree;
   }
 
@@ -20,4 +27,4 @@ class squire extends Character {
   }
 }
 
-export default squire;
+export default Squire;
