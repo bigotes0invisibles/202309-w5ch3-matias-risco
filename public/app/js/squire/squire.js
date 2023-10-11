@@ -1,5 +1,5 @@
-import Character from "../character/character";
-import Fighter from "../fighter/fighter";
+import Character from "../character/character.js";
+import Fighter from "../fighter/fighter.js";
 
 class Squire extends Character {
   fighterServed;
