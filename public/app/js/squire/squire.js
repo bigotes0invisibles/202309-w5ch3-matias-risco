@@ -14,6 +14,10 @@ class squire extends Character {
     this.fighterServed = fighterServed;
     this.nepotismDegree = nepotismDegree;
   }
+
+  communicate() {
+    return "Soy un loser";
+  }
 }
 
 export default squire;
