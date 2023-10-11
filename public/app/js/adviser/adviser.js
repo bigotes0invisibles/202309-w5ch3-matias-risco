@@ -7,6 +7,10 @@ class Adviser extends Character {
     super(name, family, age);
     this.AdviseCharacter = AdviseCharacter;
   }
+
+  communicate() {
+    return "Soy un loser";
+  }
 }
 
 export default Adviser;
