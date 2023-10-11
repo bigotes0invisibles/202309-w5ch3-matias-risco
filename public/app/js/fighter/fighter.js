@@ -16,6 +16,10 @@ class Fighter extends Character {
 
     this.dexterity = dexterity;
   }
+
+  communicate() {
+    return "Primero pego y luego pregunto";
+  }
 }
 
 export default Fighter;
