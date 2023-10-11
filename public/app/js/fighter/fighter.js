@@ -7,6 +7,13 @@ class Fighter extends Character {
   constructor(name, family, age, weapon, dexterity) {
     super(name, family, age);
     this.weapon = weapon;
+
+    if (dexterity < 0 || dexterity > 10) {
+      throw Error(
+        "Error: fighter class dexterity is not a number between 0 and 10",
+      );
+    }
+
     this.dexterity = dexterity;
   }
 }
