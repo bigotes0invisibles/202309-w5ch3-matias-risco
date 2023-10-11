@@ -34,3 +34,22 @@ const lannister = new Adviser(
 );
 
 const bronn = new Squire("Bronn", "Casa Lannister", 23, jaimeLannister, 10);
+
+const characters = [
+  joffreyBaratheon,
+  jaimeLannister,
+  daenerysTargaryen,
+  lannister,
+  bronn,
+];
+
+const charactersCommunicate = (characters) =>
+  characters.map((character) => character.communicate());
+
+charactersCommunicate(characters).forEach((communicate) =>
+  console.log(communicate),
+);
+
+jaimeLannister.die();
+
+lannister.die();
