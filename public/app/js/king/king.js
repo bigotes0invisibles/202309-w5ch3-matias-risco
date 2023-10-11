@@ -7,6 +7,10 @@ class King extends Character {
     super(name, family, age);
     this.yearsOfReign = yearsOfReign;
   }
+
+  communicate() {
+    return "Vais a morir todos";
+  }
 }
 
 export default King;
