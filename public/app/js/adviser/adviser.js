@@ -9,7 +9,7 @@ class Adviser extends Character {
   }
 
   communicate() {
-    return "Soy un loser";
+    return "No sé por qué, pero creo que voy a morir pronto";
   }
 }
 
